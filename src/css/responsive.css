@@ -1,0 +1,98 @@
+@media (max-width: 769px) {
+    main::after {
+        background: linear-gradient(-273deg, rgba(2, 2, 5, 1) 20%, rgba(0, 0, 0, 0) 30%) no-repeat;
+        width: 100vh;
+        height: 100vh;
+    }
+
+    main .pregador .imagem {
+        height: 100%;
+        width: 150%;
+        padding-left: 100px;
+        max-width: 100%;
+        max-height: 100%;
+        background-size: cover;
+        border: none;
+    }
+
+    .conteudo {
+        justify-content: flex-end;
+        left: 0;
+        top: -10%;
+        max-width: 100vh;
+        padding: 30px;
+    }
+
+    .conteudo .nome-pregador {
+        font-size: 36px;
+    }
+
+    .conteudo .descricao {
+        max-height: 250px;
+        max-width: 380px;
+        font-size: 11px;
+
+    }
+
+    .botoes {
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+        padding: 2px;
+        right: 0;
+
+        /* position: fixed;
+        top: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 120px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; */
+    }
+
+    .botoes .botao img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .conteudo .logo {
+        background-size: cover;
+        height: 60px;
+        width: 120px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    main .pregador .imagem {
+        height: auto;
+    }
+
+    .conteudo .logo {
+        background-size: cover;
+        width: 100px;
+        height: 50px;
+    }
+
+    .conteudo {
+        top: -30%;
+    }
+
+    .conteudo .nome-pregador {
+        font-size: 8px;
+    }
+
+    .botoes {
+        padding: 8px;
+        top: -20%;
+    }
+
+    .botoes .botao img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}  

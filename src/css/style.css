@@ -1,0 +1,137 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    
+    background: linear-gradient(-263deg, rgba(2,2,5,1) 40%, rgba(0,0,0,0) 65%) no-repeat;
+}
+
+main .pregador {
+    display: none;
+    height: 100vh;
+}
+
+main .pregador.selecionado {
+    display: block;
+}
+
+main .pregador .imagem {
+    float: right;
+    padding-right: 4px;
+    width: 70%;
+    height: 120%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-pregador {
+    color: #ffffff;
+    font-size: 44px;
+    font-family: "Secular one";
+    font-weight: 400;
+    margin-bottom: 30px;
+    animation: fromLeft 2s infinite;
+}
+
+@keyframes fromLeft{
+    0%{
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.conteudo .descricao {
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 24px;
+    animation: fromBottom 2s infinite;
+}
+
+@keyframes fromBottom{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.conteudo .logo {
+    background-image: url("../imagens/logo-pregadores.png");
+    background-size: cover;
+    height: 110px;
+    width: 230px;
+    margin-bottom: 10px;
+    animation: fromTop 2s infinite;
+}
+
+@keyframes fromTop{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 1190px;
+    
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botoes .botao {
+    border: 0.1px solid white;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #d9d9d9;
+}
