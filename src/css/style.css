@@ -50,7 +50,7 @@ main .pregador .imagem {
     font-family: "Secular one";
     font-weight: 400;
     margin-bottom: 30px;
-    animation: fromLeft 2s infinite;
+    animation: fromLeft 2s alternate;
 }
 
 @keyframes fromLeft{
@@ -68,7 +68,7 @@ main .pregador .imagem {
     color: #ffffff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 24px;
-    animation: fromBottom 2s infinite;
+    animation: fromBottom 2s alternate;
 }
 
 @keyframes fromBottom{
@@ -88,7 +88,7 @@ main .pregador .imagem {
     height: 110px;
     width: 230px;
     margin-bottom: 10px;
-    animation: fromTop 2s infinite;
+    animation: fromTop 2s alternate;
 }
 
 @keyframes fromTop{
